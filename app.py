@@ -2,8 +2,7 @@ from flask import Flask, request, jsonify
 import secrets
 import time
 
-app = Flask(name)
-
+app = Flask(__name__)
 # Temporary in-memory token storage
 tokens = {}
 
